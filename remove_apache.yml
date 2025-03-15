@@ -1,9 +1,10 @@
 ---
 
 - hosts: all
-  become: true
-  tasks:
 
+  become: true
+
+  tasks:
   - name: remove apache2 package
     apt:
       name: apache2
